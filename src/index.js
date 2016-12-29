@@ -8,20 +8,20 @@ app.all('*',(req,res,next) =>{
 })
 //主页端口
 app.get('/1',function(req,res){
-    fs.readFile('1.json',function(err,data){
+    fs.readFile('data/1.json',function(err,data){
     	console.log(1)
     	res.send(data)//发送json文件
     });
 })
 app.get('/2',function(req,res){
-    fs.readFile('2.json',function(err,data){
+    fs.readFile('data/2.json',function(err,data){
     	console.log(2)
     	res.send(data)//发送json文件
     });
 })
 //店铺详情页端口
 app.get('/4',function(req,res){
-   fs.readFile('4.json',function(err,data){
+   fs.readFile('data/4.json',function(err,data){
     	console.log(4)
     	res.send(data)//发送json文件
     });

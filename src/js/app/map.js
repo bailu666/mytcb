@@ -1,8 +1,9 @@
 define(function(){
-   function map(){
 	var arr= data.shop_data;
-	console.log(arr)
+	// console.log(arr)
 	function init(){
+		// var container = document.querySelector('#container')
+		// console.log(container);
 	    var map = new AMap.Map('container', {
 	        center: [116.397428, 39.90923],//地图坐标       
 	        zoom: 11//地图放大倍数
@@ -51,17 +52,6 @@ define(function(){
 	    map : map,
 		});
     }
-} 
-$('#main6 .s4').on('click',function(){
-	var div1 = document.querySelectorAll('.div0');
-	for(var j = 0;j<div1.length;j++){
-		div1[j].style.display = 'none';
-	}
-	$('#map').css('display','flex');
-})
-$('#map .close').on('click',function(){
-	$('#map').hide();
-})
 }
-return map;
+return init;
 })

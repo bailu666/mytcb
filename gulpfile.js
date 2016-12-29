@@ -32,6 +32,7 @@ gulp.task('myjs',()=>{
 	.pipe(uglify({ preserveComments:'some'}))//保留注释压缩
 	.pipe(gulp.dest('dist/js')); 
 });
+
 //压缩AJAX
 gulp.task('node',()=>{
 	return gulp.src('src/node/**/*.js')

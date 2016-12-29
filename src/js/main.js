@@ -1,3 +1,4 @@
+//首页模块
 requirejs.config({//从requires.js文件为根目录查找目标模块
 	paths:{
 		'app':'../app',
@@ -11,4 +12,5 @@ define(['lunbo','home','map'],function(lunbo,home,map){
 	lunbo()
 	home()
 	map()
+	console.log(map())
 })

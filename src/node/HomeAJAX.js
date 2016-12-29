@@ -1,4 +1,4 @@
-var baseURL = "http://192.168.1.155:4005/";
+var baseURL = "http://localhost:4005/";
 var n = 1;
 //主页AJAX
 var data = null;

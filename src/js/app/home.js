@@ -48,6 +48,16 @@ $('#top').on('click',function(){
 		scrollTop:0
 	},1000)
 })
+$('#main6 .s4').on('click',function(){
+	var div1 = document.querySelectorAll('.div0');
+	for(var j = 0;j<div1.length;j++){
+		div1[j].style.display = 'none';
+	}
+	$('#map').css('display','flex');
+})
+$('#map .close').on('click',function(){
+	$('#map').hide();
+})
 //地图
 	}
 	return home;
